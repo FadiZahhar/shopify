@@ -10,7 +10,7 @@
       rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     {{ content_for_header }}
     <!-- Header hook for plugins -->
@@ -53,5 +53,13 @@
     <main role="main">
       {{ content_for_layout }}
     </main>
+    {{ 'jquery.min.js' | asset_url | script_tag }}
+    {{ 'bootstrap.bundle.min.js' | asset_url | script_tag }}
+    {{ 'jquery.cookie.js' | asset_url | script_tag }}
+    {{ 'owl.carousel.min.js' | asset_url | script_tag }}
+    {{ 'owl.carousel2.thumbs.min.js' | asset_url | script_tag }}
+    {{ 'bootstrap-select.min.js' | asset_url | script_tag }}
+    {{ 'front.js' | asset_url | script_tag }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
   </body>
 </html>
